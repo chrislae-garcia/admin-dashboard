@@ -5,7 +5,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 300px 1fr;
   height: 100vh;
 }
 
@@ -19,21 +19,34 @@
   gap: 30px;
 }
 
-.logo {
-  min-width: 100px;
-}
-
 .logo-text {
   color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.logo-text img {
+  width: 50px;
+  margin-right: 10px;
 }
 
 ul li {
   list-style-type: none;
+  margin: 20px 0;
 }
 
 a {
   text-decoration: none;
   color: #fff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+li a img {
+  width: 30px;
+  margin: 0 20px 0 10px;
 }
 
 .header {
