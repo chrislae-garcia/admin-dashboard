@@ -145,3 +145,18 @@ div.header-buttons {
   border: none;
   font-weight: bold;
 }
+
+.content {
+  display: grid;
+  grid-template-columns: 3fr 350px;
+  grid-template-rows: 3fr 2.5fr;
+  background-color: #E2E9F1;
+}
+
+* {
+  border: black 1px solid;
+}
+
+.project-section {
+  grid-area:  1 / 1 / 3 / 2 ;
+}
