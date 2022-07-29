@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: #000 solid 1px; */
+  border: #000 solid 1px;
 }
 
 .container {
@@ -58,6 +58,7 @@ li a img {
   grid-template-rows: 1fr 2fr;
   grid-template-columns: 1fr 1fr;
   padding: 26px;
+  padding-bottom: 0;
 }
 
 .content {
@@ -98,5 +99,25 @@ input[type='search'] {
 }
 
 .profile-name {
+  font-size: 26px;
+}
+
+.greetings {
+  display: flex;
+  align-items: center;
+}
+
+.greetings > div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.greetings .profile {
+  width: 70px;
+  border-radius: 40px;
+}
+
+.greetings > div > span:last-child {
   font-size: 26px;
 }
