@@ -151,7 +151,7 @@ div.header-buttons {
   grid-template-columns: 3fr 350px;
   grid-template-rows: 3fr 2.5fr;
   background-color: #E2E9F1;
-  padding-bottom: clamp(10px, 2%, 200px);
+  padding-right: 36px;
 }
 
 .project-section {
@@ -159,10 +159,10 @@ div.header-buttons {
   display: grid;
   grid-template-rows: 50px 1fr;
   padding: 0 26px;
-  
+  align-items: flex-start;
 }
 
-.project-section h3 {
+h3 {
   justify-self: flex-start;
   align-self: flex-end;
   padding-bottom: 10px;
@@ -178,12 +178,11 @@ div.header-buttons {
 .card {
   min-height: 180px;
   display: grid;
-  /* box-shadow: inset 8px 0 #F0B524; */
   background-color: #fff;
-  /* padding-left: 26px; */
   border-radius: 10px;
   grid-template-rows: 1fr 2fr 1.5fr;
   grid-template-columns: 8px 1fr;
+  box-shadow: rgba(0,0,0,.1) 5px 5px 10px;
 }
 
 .card div:first-child {
@@ -231,4 +230,30 @@ div.header-buttons {
 .card-buttons button:nth-child(3) {
   background: url('./assets/source-fork.png') no-repeat center;
   background-size: contain;
+}
+
+* {
+  /* border: black solid 1px; */
+}
+
+.announcement-section {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  align-items: flex-start;
+}
+
+.announcements {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0,.1) 5px 5px 10px;
+  
+}
+
+.announcement-item {
+  padding-right: 20px;
 }
