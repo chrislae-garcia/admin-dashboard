@@ -168,12 +168,15 @@ div.header-buttons {
   display: grid;
   grid-template-rows: 80px 1fr;
   padding: 0 26px;
-  /* align-items: flex-start; */
 }
 
 .project-section h2 {
   justify-self: flex-start;
   align-self: flex-end;
+}
+
+h2 {
+  margin-bottom: 16px;
 }
 
 .project-cards {
@@ -205,9 +208,20 @@ div.header-buttons {
   padding: 0 20px;
 }
 
-.card h4 {
+.card h3 {
   justify-self: flex-start;
   align-self: flex-end;
+  margin-bottom: 6px;
+}
+
+.description {
+  font-size: 20px;
+}
+
+.description, 
+.announcement-item div, 
+.trending-title {
+  color: #656564;
 }
 
 .card-buttons {
@@ -249,10 +263,6 @@ div.header-buttons {
   margin: 41px 0 30px 0;
 }
 
-h2 {
-  margin-bottom: 16px;
-}
-
 .announcements {
   display: flex;
   flex-direction: column;
@@ -266,6 +276,10 @@ h2 {
 .announcement-item {
   padding-right: 20px;
 }
+
+h4 {
+  margin-bottom: 4px;
+} 
 
 /* Trending Section */
 
@@ -291,8 +305,4 @@ h2 {
   width: 60px;
   border-radius: 50px;
   margin-right: 20px;
-}
-
-.trending-title {
-  color: #656564;
 }
