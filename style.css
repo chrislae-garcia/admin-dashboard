@@ -1,7 +1,13 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./font/roboto-regular.woff) format('woff'),
+  url(./font/roboto-regular.woff2) format('woff2');
+}
+
 * {
   margin: 0;
   padding: 0;
-  /* border: #000 solid 1px; */
+  font-family: 'Roboto';
 }
 
 .container {
