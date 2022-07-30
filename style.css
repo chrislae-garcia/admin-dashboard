@@ -69,12 +69,6 @@ li a img {
   box-shadow: 0 0 10px 10px rgba(0,0,0,.1);
 }
 
-.content {
-  grid-column: 2 / 3;
-  background-color: #AAC3CF;
-  z-index: -1;
-}
-
 .search {
   display: flex;
   align-items: center;
@@ -153,12 +147,14 @@ div.header-buttons {
 }
 
 .content {
+  grid-column: 2 / 3;
   display: grid;
   grid-template-columns: 3fr 350px;
   grid-template-rows: 1fr;
+  z-index: -1;
   background-color: #E2E9F1;
   padding-right: 36px;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
 }
 
 /* Projects Section */
